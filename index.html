@@ -1,1314 +1,203 @@
 <!DOCTYPE html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Gofurjon — Developer</title>
-
-    <meta name="description"
-          content="Gofurjon — Web Developer Portfolio">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-
-<body>
-
-<!-- ================= BOOT SCREEN ================= -->
-
-<div class="boot-screen" id="bootScreen">
-
-    <div class="boot-terminal">
-
-        <div class="terminal-head">
-            <div class="dots">
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-
-            <span>gofurjon@developer:~</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gofurjon portfolio — developer, designer and problem solver."
+    />
+    <title>Gofurjon | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#home" class="logo">Gofurjon</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </div>
+      </nav>
+    </header>
 
-        <div class="boot-content">
-
-            <p><span class="green">gofurjon@dev</span>:~$ ./start.sh</p>
-
-            <p class="boot-line">Initializing developer environment...</p>
-            <p class="boot-line">Loading interface................ <b>OK</b></p>
-            <p class="boot-line">Loading projects................. <b>OK</b></p>
-            <p class="boot-line">Loading skills................... <b>OK</b></p>
-            <p class="boot-line">Connecting portfolio............. <b>OK</b></p>
-
-            <br>
-
-            <p class="green">System ready.</p>
-
-            <div class="boot-bar">
-                <span></span>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- ================= BACKGROUND ================= -->
-
-<div class="grid-background"></div>
-
-<div class="noise"></div>
-
-
-<!-- ================= NAVBAR ================= -->
-
-<header class="navbar">
-
-    <div class="container nav-inner">
-
-        <a href="#home" class="brand">
-
-            <div class="brand-symbol">
-                G
-            </div>
-
-            <div>
-                <strong>GOFURJON</strong>
-                <small>DEVELOPER</small>
-            </div>
-
-        </a>
-
-
-        <nav id="navMenu">
-
-            <a href="#home">01. HOME</a>
-            <a href="#about">02. ABOUT</a>
-            <a href="#skills">03. SKILLS</a>
-            <a href="#projects">04. PROJECTS</a>
-            <a href="#journey">05. JOURNEY</a>
-            <a href="#contact">06. CONTACT</a>
-
-        </nav>
-
-
-        <button class="menu-button" id="menuButton">
-
-            <i data-lucide="menu"></i>
-
-        </button>
-
-    </div>
-
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<main>
-
-<section class="hero section" id="home">
-
-    <div class="container hero-grid">
-
-
-        <!-- LEFT -->
-
-        <div class="hero-left">
-
-            <div class="status">
-
-                <span></span>
-
-                AVAILABLE FOR NEW PROJECTS
-
-            </div>
-
-
-            <p class="hero-command">
-
-                <span>root@gofurjon</span>:~$ whoami
-
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">Hello, I am</p>
+            <h1>Gofurjon <span>Turgunboyev</span></h1>
+            <p class="subtitle">Frontend Developer & Problem Solver</p>
+            <p class="description">
+              I build modern, responsive and user-friendly digital experiences. I
+              enjoy turning ideas into products that are useful, elegant and easy
+              to use.
             </p>
-
-
-            <h1>
-
-                GOFURJON
-
-                <span>DEVELOPER</span>
-
-            </h1>
-
-
-            <div class="hero-role">
-
-                <span>&lt;</span>
-
-                <strong id="typing"></strong>
-
-                <span>/&gt;</span>
-
+            <div class="actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Hire Me</a>
             </div>
+          </div>
 
-
-            <p class="hero-text">
-
-                Men zamonaviy web texnologiyalar bilan ishlashga
-                qiziqadigan dasturchiman. Frontend va backend
-                yo‘nalishlarida rivojlanib, real loyihalar
-                yaratishga harakat qilaman.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn main-btn">
-
-                    VIEW PROJECTS
-
-                    <i data-lucide="arrow-up-right"></i>
-
-                </a>
-
-
-                <a href="#contact" class="btn outline-btn">
-
-                    CONTACT ME
-
-                </a>
-
+          <div class="hero-card">
+            <div class="card-glow"></div>
+            <div class="profile-box">
+              <div class="avatar">GT</div>
+              <div>
+                <p class="mini-label">Available for work</p>
+                <h3>Portfolio</h3>
+              </div>
             </div>
-
-
-            <div class="quick-links">
-
-                <a href="https://t.me/gofurjon_343" target="_blank">
-
-                    <i data-lucide="send"></i>
-
-                    Telegram
-
-                </a>
-
-                <a href="https://instagram.com/gofurjon_o18" target="_blank">
-
-                    <i data-lucide="instagram"></i>
-
-                    Instagram
-
-                </a>
-
-            </div>
-
+            <ul class="mini-list">
+              <li><span>Focus</span><strong>UI / Web</strong></li>
+              <li><span>Stack</span><strong>HTML / CSS / JS</strong></li>
+              <li><span>Location</span><strong>Uzbekistan</strong></li>
+            </ul>
+          </div>
         </div>
+      </section>
 
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Creative and detail-oriented developer</h2>
+          </div>
 
-        <!-- RIGHT TERMINAL -->
-
-        <div class="hero-terminal">
-
-            <div class="terminal-window">
-
-                <div class="terminal-header">
-
-                    <div class="dots">
-
-                        <i></i>
-                        <i></i>
-                        <i></i>
-
-                    </div>
-
-                    <span>gofurjon.config.js</span>
-
-                    <i data-lucide="terminal"></i>
-
-                </div>
-
-
-                <div class="terminal-body">
-
-<pre>
-<span class="purple">const</span> <span class="blue">developer</span> = {
-
-    <span class="key">name</span>:
-        <span class="string">"Gofurjon"</span>,
-
-    <span class="key">role</span>:
-        <span class="string">"Web Developer"</span>,
-
-    <span class="key">location</span>:
-        <span class="string">"Uzbekistan"</span>,
-
-    <span class="key">focus</span>: [
-
-        <span class="string">"Frontend"</span>,
-        <span class="string">"Backend"</span>,
-        <span class="string">"JavaScript"</span>
-
-    ],
-
-    <span class="key">status</span>:
-        <span class="green">true</span>
-
-};
-
-<span class="comment">// Keep coding...</span>
-</pre>
-
-                </div>
-
-
-                <div class="terminal-footer">
-
-                    <span>
-                        <i></i>
-                        system online
-                    </span>
-
-                    <span>
-                        UTF-8
-                    </span>
-
-                </div>
-
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I am passionate about web development, user experience and clean,
+                maintainable code. My goal is to create digital products that help
+                businesses stand out and users feel comfortable using them.
+              </p>
+              <p>
+                I like learning new technologies, improving my workflow and
+                building interfaces that look good and work smoothly on every device.
+              </p>
             </div>
 
-        </div>
-
-    </div>
-
-
-    <div class="hero-bottom">
-
-        <span>SCROLL TO EXPLORE</span>
-
-        <div></div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section about" id="about">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>02 /</span>
-
-            <h2>ABOUT ME</h2>
-
-            <div></div>
-
-        </div>
-
-
-        <div class="about-grid">
-
-
-            <div class="id-card">
-
-                <div class="id-top">
-
-                    <span>DEVELOPER ID</span>
-
-                    <i data-lucide="scan-line"></i>
-
-                </div>
-
-
-                <div class="avatar">
-
-                    <span>&lt;G/&gt;</span>
-
-                </div>
-
-
-                <h3>Gofurjon</h3>
-
-                <p>Web Developer</p>
-
-
-                <div class="id-line"></div>
-
-
-                <div class="id-details">
-
-                    <div>
-
-                        <small>STATUS</small>
-
-                        <strong>
-                            <i></i> LEARNING
-                        </strong>
-
-                    </div>
-
-                    <div>
-
-                        <small>FIELD</small>
-
-                        <strong>WEB DEVELOPMENT</strong>
-
-                    </div>
-
-                    <div>
-
-                        <small>LANGUAGE</small>
-
-                        <strong>UZBEK</strong>
-
-                    </div>
-
-                </div>
-
-
-                <div class="id-code">
-
-                    GOFURJON.DEV
-
-                </div>
-
+            <div class="info-card">
+              <h3>Quick facts</h3>
+              <ul>
+                <li>💡 Strong interest in frontend development</li>
+                <li>📱 Responsive design with mobile-first mindset</li>
+                <li>⚙️ Clean structure and clean code</li>
+                <li>🤝 Teamwork and continuous learning</li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Some of my work</h2>
+          </div>
 
-            <div class="about-content">
-
-                <p class="big-text">
-
-                    Kod yozish — men uchun shunchaki
-                    <span>texnologiya emas.</span>
-
-                </p>
-
-
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-thumb thumb-one"></div>
+              <div class="project-body">
+                <h3>Portfolio Website</h3>
                 <p>
-
-                    Men dasturlashni o‘rganayotgan va har bir yangi
-                    loyiha orqali tajriba orttirayotgan dasturchiman.
-                    Web dasturlash, frontend va backend texnologiyalar
-                    meni ayniqsa qiziqtiradi.
-
+                  A clean, modern personal portfolio website for showcasing my work,
+                  skills and contact information.
                 </p>
-
-
-                <p>
-
-                    Hozirda HTML, CSS, JavaScript, Node.js, Express
-                    va C++ bilan ishlashni rivojlantiryapman.
-                    Maqsadim — katta va foydali dasturiy loyihalar
-                    yaratadigan professional developer bo‘lish.
-
-                </p>
-
-
-                <div class="about-stats">
-
-                    <div>
-
-                        <strong>06+</strong>
-
-                        <span>TECHNOLOGIES</span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>06+</strong>
-
-                        <span>PROJECTS</span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>∞</strong>
-
-                        <span>IDEAS</span>
-
-                    </div>
-
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
                 </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SKILLS ================= -->
-
-<section class="section skills" id="skills">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>03 /</span>
-
-            <h2>TECH STACK</h2>
-
-            <div></div>
-
-        </div>
-
-
-        <div class="skills-layout">
-
-
-            <div class="skills-intro">
-
-                <p class="code-label">
-                    // technologies I work with
-                </p>
-
-                <h3>
-
-                    BUILD.
-
-                    <span>LEARN.</span>
-
-                    REPEAT.
-
-                </h3>
-
-                <p>
-
-                    Dasturlashda eng muhim narsa — doimiy
-                    o‘rganish va amaliyot.
-
-                </p>
-
-            </div>
-
-
-            <div class="skills-list">
-
-
-                <div class="tech">
-
-                    <div class="tech-icon html-icon">
-                        <i data-lucide="code-2"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>HTML</strong>
-                            <span>90%</span>
-                        </div>
-
-                        <p>Structure & Semantic Web</p>
-
-                        <div class="bar">
-                            <span style="width:90%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech">
-
-                    <div class="tech-icon css-icon">
-                        <i data-lucide="palette"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>CSS</strong>
-                            <span>85%</span>
-                        </div>
-
-                        <p>UI / UX & Responsive Design</p>
-
-                        <div class="bar">
-                            <span style="width:85%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech">
-
-                    <div class="tech-icon js-icon">
-                        <i data-lucide="braces"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>JAVASCRIPT</strong>
-                            <span>75%</span>
-                        </div>
-
-                        <p>Interactive Web Applications</p>
-
-                        <div class="bar">
-                            <span style="width:75%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech">
-
-                    <div class="tech-icon node-icon">
-                        <i data-lucide="server"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>NODE.JS</strong>
-                            <span>65%</span>
-                        </div>
-
-                        <p>Backend Development</p>
-
-                        <div class="bar">
-                            <span style="width:65%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech">
-
-                    <div class="tech-icon express-icon">
-                        <i data-lucide="network"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>EXPRESS</strong>
-                            <span>60%</span>
-                        </div>
-
-                        <p>Server & API Development</p>
-
-                        <div class="bar">
-                            <span style="width:60%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech">
-
-                    <div class="tech-icon cpp-icon">
-                        <i data-lucide="terminal"></i>
-                    </div>
-
-                    <div class="tech-info">
-
-                        <div>
-                            <strong>C++</strong>
-                            <span>65%</span>
-                        </div>
-
-                        <p>Algorithms & Programming</p>
-
-                        <div class="bar">
-                            <span style="width:65%"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section projects" id="projects">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>04 /</span>
-
-            <h2>SELECTED PROJECTS</h2>
-
-            <div></div>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <article class="project featured">
-
-                <div class="project-image market-preview">
-
-                    <div class="fake-browser">
-
-                        <div class="browser-top">
-
-                            <span></span>
-                            <span></span>
-                            <span></span>
-
-                        </div>
-
-                        <div class="market-content">
-
-                            <div class="market-nav">
-
-                                <b>TECH<span>MARKET</span></b>
-
-                                <small>HOME</small>
-                                <small>PRODUCTS</small>
-                                <small>LOGIN</small>
-
-                            </div>
-
-                            <div class="market-hero">
-
-                                <div>
-
-                                    <small>NEW TECHNOLOGY</small>
-
-                                    <h4>
-                                        SMART<br>
-                                        <span>TECH.</span>
-                                    </h4>
-
-                                </div>
-
-                                <div class="phone-shape"></div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-number">01</span>
-
-                    <p class="project-type">
-                        WEB DEVELOPMENT
-                    </p>
-
-                    <h3>Telefon & Texnika Market</h3>
-
-                    <p>
-
-                        Telefon va texnika mahsulotlari uchun
-                        zamonaviy online market web sayti.
-                        Interfeys, mahsulotlar, login va
-                        registration qismlari bilan ishlangan.
-
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JAVASCRIPT</span>
-
-                    </div>
-
-
-                    <div class="project-actions">
-
-                        <a href="#" class="project-button">
-
-                            VIEW PROJECT
-
-                            <i data-lucide="arrow-up-right"></i>
-
-                        </a>
-
-                        <a href="#" class="github-button">
-
-                            <i data-lucide="github"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+              </div>
             </article>
 
-
-            <article class="project">
-
-                <div class="project-mini-image backend-preview">
-
-                    <div class="server-lines">
-
-                        <span>GET /</span>
-                        <b>200 OK</b>
-
-                        <span>POST /api</span>
-                        <b>201 CREATED</b>
-
-                        <span>SERVER</span>
-                        <b>ONLINE</b>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-number">02</span>
-
-                    <p class="project-type">
-                        BACKEND
-                    </p>
-
-                    <h3>Node.js Backend Server</h3>
-
-                    <p>
-
-                        Node.js va Express yordamida
-                        yaratilgan backend server.
-
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>NODE.JS</span>
-                        <span>EXPRESS</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project">
-
-                <div class="project-mini-image login-preview">
-
-                    <div class="login-box">
-
-                        <span>WELCOME</span>
-
-                        <b>LOGIN</b>
-
-                        <div></div>
-                        <div></div>
-
-                        <small>SIGN IN</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-number">03</span>
-
-                    <p class="project-type">
-                        FRONTEND
-                    </p>
-
-                    <h3>Login & Registration</h3>
-
-                    <p>
-
-                        Login va registration sahifalari
-                        uchun zamonaviy web interfeys.
-
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project">
-
-                <div class="project-mini-image portfolio-preview">
-
-                    <div class="portfolio-code">
-
-                        <span>&lt;div&gt;</span>
-
-                        <strong>GOFURJON</strong>
-
-                        <span>WEB DEVELOPER</span>
-
-                        <span>&lt;/div&gt;</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-number">04</span>
-
-                    <p class="project-type">
-                        WEB DEVELOPMENT
-                    </p>
-
-                    <h3>Personal Portfolio</h3>
-
-                    <p>
-
-                        Dasturchining shaxsiy portfolio
-                        web sayti.
-
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-
-        <div class="more-projects">
-
-            <span>MORE PROJECTS COMING SOON</span>
-
-            <div class="loading-dots">
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= JOURNEY ================= -->
-
-<section class="section journey" id="journey">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>05 /</span>
-
-            <h2>MY JOURNEY</h2>
-
-            <div></div>
-
-        </div>
-
-
-        <div class="journey-layout">
-
-
-            <div class="journey-terminal">
-
-                <div class="terminal-header">
-
-                    <div class="dots">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <span>learning.log</span>
-
-                </div>
-
-
-                <div class="log">
-
-                    <p>
-                        <span>2026</span>
-                        Starting programming journey
-                    </p>
-
-                    <p>
-                        <span>2026</span>
-                        Learning HTML & CSS
-                    </p>
-
-                    <p>
-                        <span>2026</span>
-                        Building first websites
-                    </p>
-
-                    <p>
-                        <span>2026</span>
-                        Learning JavaScript
-                    </p>
-
-                    <p>
-                        <span>2026</span>
-                        Starting Node.js
-                    </p>
-
-                    <p class="current">
-                        <span>NOW</span>
-                        Building bigger projects...
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="journey-text">
-
-                <p class="code-label">
-                    // growth never stops
-                </p>
-
-                <h3>
-                    FROM
-                    <span>LEARNING</span>
-                    TO
-                    <span>BUILDING.</span>
-                </h3>
-
+            <article class="project-card">
+              <div class="project-thumb thumb-two"></div>
+              <div class="project-body">
+                <h3>Business Landing Page</h3>
                 <p>
-
-                    Har bir kichik loyiha keyingi katta loyihaga
-                    tayyorgarlik. Men yangi texnologiyalarni
-                    o‘rganib, ularni amaliyotda sinab boraman.
-
+                  A responsive product landing page designed to highlight services,
+                  benefits and call-to-action sections.
                 </p>
-
-
-                <div class="future">
-
-                    <span>NEXT TARGET</span>
-
-                    <strong>
-                        FULL STACK DEVELOPMENT
-                    </strong>
-
-                    <div class="target-line">
-                        <span></span>
-                    </div>
-
+                <div class="tags">
+                  <span>UI</span>
+                  <span>UX</span>
+                  <span>Responsive</span>
                 </div>
+              </div>
+            </article>
 
-            </div>
-
-        </div>
-
-
-        <!-- ACTIVITY -->
-
-        <div class="activity">
-
-            <div class="activity-head">
-
-                <div>
-
-                    <span>CODING ACTIVITY</span>
-
-                    <small>2026</small>
-
-                </div>
-
-                <span>LESS → MORE</span>
-
-            </div>
-
-
-            <div class="activity-grid">
-
-                <div class="days">
-                    <span>MON</span>
-                    <span>WED</span>
-                    <span>FRI</span>
-                    <span>SUN</span>
-                </div>
-
-
-                <div class="squares">
-
-                    <i></i><i class="l1"></i><i class="l2"></i><i></i>
-                    <i class="l3"></i><i class="l1"></i><i class="l2"></i>
-                    <i class="l3"></i><i></i><i class="l2"></i>
-                    <i class="l1"></i><i class="l3"></i><i class="l2"></i>
-                    <i></i><i class="l1"></i><i class="l3"></i>
-                    <i class="l2"></i><i class="l1"></i><i></i><i class="l3"></i>
-                    <i class="l1"></i><i class="l2"></i><i class="l3"></i>
-                    <i></i><i class="l1"></i><i class="l2"></i><i></i>
-                    <i class="l3"></i><i class="l2"></i><i class="l1"></i>
-                    <i class="l3"></i><i></i><i class="l2"></i><i class="l1"></i>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section contact" id="contact">
-
-    <div class="container">
-
-        <div class="contact-box">
-
-            <div class="contact-left">
-
-                <p class="code-label">
-                    // let's build something
-                </p>
-
-                <h2>
-                    HAVE AN IDEA?
-                    <span>LET'S CODE IT.</span>
-                </h2>
-
+            <article class="project-card">
+              <div class="project-thumb thumb-three"></div>
+              <div class="project-body">
+                <h3>Web App UI</h3>
                 <p>
-
-                    Loyiha, web sayt yoki dasturlash bo‘yicha
-                    taklifingiz bo‘lsa, men bilan bog‘laning.
-
+                  A mobile-friendly dashboard concept focused on simple navigation,
+                  visual clarity and usability.
                 </p>
-
-
-                <div class="contact-socials">
-
-                    <a href="https://t.me/gofurjon_343"
-                       target="_blank">
-
-                        <i data-lucide="send"></i>
-
-                        <span>
-                            <small>TELEGRAM</small>
-                            @gofurjon_343
-                        </span>
-
-                        <i data-lucide="arrow-up-right"></i>
-
-                    </a>
-
-
-                    <a href="https://instagram.com/gofurjon_o18"
-                       target="_blank">
-
-                        <i data-lucide="instagram"></i>
-
-                        <span>
-                            <small>INSTAGRAM</small>
-                            @gofurjon_o18
-                        </span>
-
-                        <i data-lucide="arrow-up-right"></i>
-
-                    </a>
-
+                <div class="tags">
+                  <span>Design</span>
+                  <span>Frontend</span>
+                  <span>Prototype</span>
                 </div>
-
-            </div>
-
-
-            <div class="contact-right">
-
-                <div class="contact-terminal">
-
-                    <div class="terminal-header">
-
-                        <div class="dots">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </div>
-
-                        <span>message.sh</span>
-
-                    </div>
-
-
-                    <form id="contactForm">
-
-                        <label>
-                            YOUR NAME
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Gofurjon..."
-                            required
-                        >
-
-
-                        <label>
-                            YOUR EMAIL
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="you@example.com"
-                            required
-                        >
-
-
-                        <label>
-                            MESSAGE
-                        </label>
-
-                        <textarea
-                            id="message"
-                            placeholder="Your message..."
-                            required
-                        ></textarea>
-
-
-                        <button type="submit">
-
-                            SEND MESSAGE
-
-                            <i data-lucide="send"></i>
-
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies</h2>
+          </div>
 
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="container footer-inner">
-
-        <div class="footer-brand">
-
-            <strong>&lt;GOFURJON/&gt;</strong>
-
-            <span>WEB DEVELOPER</span>
-
+          <div class="skills-grid">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">GitHub</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">Figma</div>
+            <div class="skill-item">UI/UX Basics</div>
+          </div>
         </div>
+      </section>
 
-
-        <p>
-
-            Built with code &amp; coffee.
-
-        </p>
-
-
-        <div class="footer-links">
-
-            <a href="https://t.me/gofurjon_343"
-               target="_blank">
-
-                Telegram
-
-            </a>
-
-            <a href="https://instagram.com/gofurjon_o18"
-               target="_blank">
-
-                Instagram
-
-            </a>
-
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build something great together</h2>
+          </div>
+          <a href="mailto:your.email@example.com" class="btn btn-primary">your.email@example.com</a>
         </div>
+      </section>
+    </main>
 
-    </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Gofurjon</p>
+        <div class="socials">
+          <a href="https://github.com/turgunboyevgofurjon343-arch" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
 
-</footer>
-
-
-<button class="top-button" id="topButton">
-
-    <i data-lucide="arrow-up"></i>
-
-</button>
-
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
